@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFisrt API", "CodeFisrt API.csproj", "{80DA8D8B-52A9-46D1-8760-2139EC02FDDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB", "..\DB\DB.csproj", "{A80468E7-304A-4037-ADC4-F38EB8CC10F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80DA8D8B-52A9-46D1-8760-2139EC02FDDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80DA8D8B-52A9-46D1-8760-2139EC02FDDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80DA8D8B-52A9-46D1-8760-2139EC02FDDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80DA8D8B-52A9-46D1-8760-2139EC02FDDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A80468E7-304A-4037-ADC4-F38EB8CC10F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80468E7-304A-4037-ADC4-F38EB8CC10F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80468E7-304A-4037-ADC4-F38EB8CC10F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80468E7-304A-4037-ADC4-F38EB8CC10F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06AAF133-BD5F-44BB-A779-34A7CE072FE3}
+	EndGlobalSection
+EndGlobal
