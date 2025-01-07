@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DB\**" />
+    <Content Remove="DB\**" />
+    <EmbeddedResource Remove="DB\**" />
+    <None Remove="DB\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -16,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DB\DB.csproj" />
+    <ProjectReference Include="DB\DB.csproj" />
   </ItemGroup>
 
 </Project>
