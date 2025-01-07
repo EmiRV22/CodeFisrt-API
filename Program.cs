@@ -1,4 +1,7 @@
 
+using DB;
+using Microsoft.EntityFrameworkCore;
+
 namespace CodeFisrt_API
 {
     public class Program
@@ -13,8 +16,16 @@ namespace CodeFisrt_API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            builder.Services.AddDbContext<BarContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("BarConnection"))
+                );
             var app = builder.Build();
+
+            using (var scope = app.Services.CreateScope())
+            {
+                var context = scope.ServiceProvider.GetRequiredService<BarContext>();
+                context.Database.Migrate();
+            }
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
